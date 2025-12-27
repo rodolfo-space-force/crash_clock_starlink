@@ -1,35 +1,9 @@
-# crash_clock_starlink
-Este projeto em Python estima o tempo médio entre colisões (sem manobras evasivas) entre satélites da constelação Starlink em órbita terrestre baixa (LEO), utilizando dados TLE públicos da Celestrak.
-
-# 🛰️ Starlink Crash Clock Estimator
+#  Starlink Crash Clock Estimator
 
 Este projeto em Python estima o tempo médio entre colisões (sem manobras evasivas) entre satélites da constelação **Starlink** em órbita terrestre baixa (LEO), utilizando dados TLE públicos da Celestrak. A métrica estimada é conhecida como **Crash Clock**, baseada na densidade espacial, na área de colisão efetiva e na velocidade relativa entre objetos.
 
 [![Python](https://img.shields.io/badge/Python-3.10+-blue?logo=python&style=flat-square)](https://www.python.org/)
 [![MIT License](https://img.shields.io/badge/license-MIT-green?style=flat-square)](./LICENSE)
-
-## 📊 Modelo Teórico
-
-A simulação adota a fórmula aproximada de colisões por unidade de tempo:
-
-\[
-\Gamma = n^2 \cdot A_{\text{col}} \cdot V_{\text{rel}} \cdot V_{\text{shell}}
-\]
-
-Onde:
-
-- `n` = densidade espacial de satélites (objetos/km³) em uma concha esférica fina  
-- `A_col` = área efetiva de colisão (300 m²)  
-- `V_rel` = velocidade relativa típica (10 km/s)  
-- `V_shell` = volume da concha entre altitudes \( h_1 \) e \( h_2 \)
-
-O **tempo médio entre colisões** (\( \tau \)) é então estimado por:
-
-\[
-\tau = \frac{1}{\Gamma_{\text{total}}}
-\]
-
----
 
 ##  Funcionamento
 
@@ -87,7 +61,7 @@ CRASH Clock estimado (sem manobras): 5.76 horas
 
 ---
 
-## 🔬 Observações
+##  Observações
 
 - Este modelo **não considera manobras evasivas** realizadas por satélites, como as feitas automaticamente pela constelação Starlink.
 - O valor obtido representa um cenário **hipotético de colisão** caso nenhum satélite mude sua trajetória.
@@ -95,7 +69,7 @@ CRASH Clock estimado (sem manobras): 5.76 horas
 
 ---
 
-## 📚 Referências
+##  Referências
 
 - Celestrak TLE Data: https://celestrak.org/
 - SGP4 Python: https://pypi.org/project/sgp4/
@@ -104,15 +78,8 @@ CRASH Clock estimado (sem manobras): 5.76 horas
 
 ---
 
-## 👤 Autor
 
-**Rodolfo Milhomem**  
-[GitHub – rodolfo-space-force](https://github.com/rodolfo-space-force)  
-Especialista em Ciências Aeroespaciais | Engenharia de Computação | Direito Espacial
-
----
-
-## 📄 Licença
+##  Licença
 
 Este projeto está licenciado sob a [Licença MIT](./LICENSE).  
 Você pode usar, modificar e redistribuir este código livremente, **desde que mencione o autor original**.
