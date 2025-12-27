@@ -55,7 +55,7 @@ Saída esperada (exemplo):
 
 ```
 Baixando TLEs do grupo Starlink (Celestrak)...
-TLEs válidos lidos: 4627 objetos em LEO
+TLEs válidos lidos: 9302 objetos em LEO
 CRASH Clock estimado (sem manobras): 5.76 horas
 ```
 
@@ -73,7 +73,7 @@ CRASH Clock estimado (sem manobras): 5.76 horas
 
 - Celestrak TLE Data: https://celestrak.org/
 - SGP4 Python: https://pypi.org/project/sgp4/
-- An Orbital House of Cards – *Nature Astronomy* (2023)
+- An Orbital House of Cards – *Nature Astronomy* (2023): https://arxiv.org/pdf/2512.09643
 - ESA Space Debris Report – https://www.esa.int/Safety_Security/Space_Debris
 
 ---
